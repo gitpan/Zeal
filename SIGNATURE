@@ -1,0 +1,59 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.73.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+SHA1 b9503ade09f4a10790d99594073f11e4635e6410 Changes
+SHA1 47c216a6837f5639872e53e2f936cdf8fecf22c7 MANIFEST
+SHA1 b96d6d9b2783eb29602d061411d283691b48dea5 META.json
+SHA1 bd66957218e4be31b3c2b76e8fc9ea0d36fb3fa4 META.yml
+SHA1 b5aa6ca979847dacb5cc2488f39493b8806a7bf2 Makefile.PL
+SHA1 8a05b8fd1c92e37d0b47f2c4f58b00501f4a716d README
+SHA1 f49adc90f95edfcf56e35ed027ae603df0a7db4f lib/Zeal.pm
+SHA1 0cdb7bb4255e5c8f24d5fc650530c87ad0336a68 lib/Zeal/Docset.pm
+SHA1 a5b22dfe876cb40d421fcc645b90dec4e46126d9 lib/Zeal/Document.pm
+SHA1 fb53e5d94b13b5872fb2f0ab495ef625762de9c8 t/Zeal.t
+SHA1 ee4bf4f0b6ab445d561bd8cef6abf9d067183149 t/ds/a.docset/Contents/Info.plist
+SHA1 866cd3beaa7fc21b8c23fc80b1d0834b731664bb t/ds/a.docset/Contents/Resources/Documents/about.html
+SHA1 8b96b84ac472cbccec2b9705be3084f66e0b4d5b t/ds/a.docset/Contents/Resources/Documents/array.html
+SHA1 a09fe18e83123d7f1239fbbf333704d9fe48c066 t/ds/a.docset/Contents/Resources/docSet.dsidx
+SHA1 29969c960e9d37f17359c14acccda0124f9dd767 t/ds/b.docset/Contents/Info.plist
+SHA1 752b1fd754e31592d500968475cbef08dcac6680 t/ds/b.docset/Contents/Resources/Documents/building.html
+SHA1 32b7d9b56854ae71a314f05825dbdabb9361f87c t/ds/b.docset/Contents/Resources/Documents/builtin.html
+SHA1 815030ba64ac5d709dd09880552d634484687491 t/ds/b.docset/Contents/Resources/docSet.dsidx
+SHA1 8d019cc6cbf060c9ca0e9c56003f0686d85bdcf8 t/ds/c.docset/Contents/Info.plist
+SHA1 6c38f299e8e84416b9e1325e74966cb4298ca25a t/ds/c.docset/Contents/Resources/Documents/category.html
+SHA1 d392a8fa68d50fbddfc2dfec4d62291ff3b58370 t/ds/c.docset/Contents/Resources/Documents/class.html
+SHA1 265efa5bb5f91f217fb5983572fae275b980d82d t/ds/c.docset/Contents/Resources/docSet.dsidx
+SHA1 7b6659ce6004740b7ee001a19d0344478d70b6dd t/ds/dummy-file
+SHA1 a52109609f4d64a20e4b4a2e395ea2180173bfa8 t/mkindex.pl
+SHA1 190939b33d26a5900164708c5b5fd550d3e853f0 t/perlcritic.t
+SHA1 bb2200fc9e8ebab67d98f943a3f6c3e2771134fc t/perlcriticrc
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCgAGBQJUoHlWAAoJEMoENb5ewbNi0kMP/2ypzHKKiUe9+n0xuGA3kjKS
+Zj95KG/aR+8IikqNPFRGEHqDcbul4+GuQoZ0NtX+lQ3/IphiSehgefDavjzqHQDA
+iVYbhPcnbywQQKZcki/kiRiKgBXn1dK2JbN50299XBL8elPfwN1Os4OCQog2yot2
+jR7uPTaimJQ643bcO9968Tm+zBrgeFPfYqrLa+KocY+SNDKrUVFv8sLc+BgFxFKf
+4Zpm2Sj/T+dtebrVC6m82sMjSq+bmmuw4tS3SSrkTLgdmMEQBTVsymzQIUkCoIay
+jwSIjWdZs1AAhunSHlkBGd4wMCn+CGUhEeuaDTPOkaE3SYGnEDCcduAms2mewZOT
+k7/JouYIsz/JUgwXLgiGjpG66HuqiB9Rs+eimuYUAw5PdPFe57e8CS70JmDIZJGW
+sOpC2PjkpKYt0ep/b3pit35w8Mo3ygQS4+8IraM6QZSo276UThaYs/vi0ZegjYtH
+S2m1W5yeSkdKpHKtqlZcmeR6JxMJJt6IL5RpwKL7MQKEg71lCGxNzn4vMAXof6Pa
+UQC3L/gUSHtgskm72YUKpd2VbigFGCad+G9AWQI1L0nDZhM0QxvhAY9q07pfI+Gu
+PqP1L/R7VsvLiHm+ndAQgj50U673rQxPwGCI3TvuYjZmYV5LlDo/ETUhOyZd+JYz
+kes+xaMcviCrMeO2Z41D
+=6Byz
+-----END PGP SIGNATURE-----

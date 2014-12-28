@@ -1,0 +1,50 @@
+{
+   "abstract" : "Read and query Dash/Zeal docsets",
+   "author" : [
+      "Marius Gavrilescu <marius@ieval.ro>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.142690",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Zeal",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "DBD::SQLite" : "0",
+            "DBI" : "0",
+            "File::Slurp" : "0",
+            "Mac::PropertyList::SAX" : "0",
+            "perl" : "5.014000"
+         }
+      }
+   },
+   "release_status" : "testing",
+   "resources" : {
+      "repository" : {
+         "url" : "http://git.ieval.ro/?p=zeal.git"
+      }
+   },
+   "version" : "0.000_001"
+}
