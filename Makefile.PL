@@ -10,10 +10,14 @@ WriteMakefile(
 	LICENSE           => 'perl',
 	SIGN              => 1,
 	PREREQ_PM         => {
-		qw/DBI                    0
+		qw/Archive::Tar           0
+		   Class::Accessor::Fast  0
+		   DBI                    0
 		   DBD::SQLite            0
 		   File::Slurp            0
-		   Mac::PropertyList::SAX 0/,
+		   File::Which            0
+		   Mac::PropertyList::SAX 0
+		   XML::Rules             0/,
 	},
 	META_ADD         => {
 		dynamic_config => 0,

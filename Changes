@@ -1,4 +1,11 @@
 Revision history for Perl extension Zeal.
 
+0.000_002 2014-12-30T23:50+02:00
+ - Fix POD formatting in Zeal.pm
+ - Fix PREREQ_PM
+ - Fix remote documents in Zeal::Docset
+ - Add SYNOPSIS sections for Zeal::Document and Zeal::Docset
+ - Add Zeal::Feed for working with documentation feeds
+
 0.000_001 2014-12-28T23:42+02:00
  - Initial release

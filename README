@@ -1,4 +1,4 @@
-Zeal version 0.000_001
+Zeal version 0.000_002
 ======================
 
 Dash is an offline API documentation browser. Zeal.pm is a module for
@@ -20,10 +20,14 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
+* Archive::Tar
+* Class::Accesor::Fast
 * DBI
 * DBD::SQLite
 * File::Slurp
+* File::Which
 * Mac::PropertyList::SAX
+* XML::Rules
 
 COPYRIGHT AND LICENCE
 

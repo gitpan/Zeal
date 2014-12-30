@@ -4,7 +4,7 @@ use 5.014000;
 use strict;
 use warnings;
 
-our $VERSION = '0.000_001';
+our $VERSION = '0.000_002';
 
 use parent qw/Class::Accessor::Fast/;
 __PACKAGE__->mk_ro_accessors(qw/path plist dbh name id family/);
@@ -45,7 +45,7 @@ sub _blessdocs {
 
 sub fetch {
 	my ($self, $path) = @_;
-	return HTTP::Tiny->new->get($path) if $path =~ /^http:/s;
+	return HTTP::Tiny->new->get($path)->{content} if $path =~ /^http:/s;
 	my $docroot = catdir $self->path, 'Contents', 'Resources', 'Documents';
 	$path = rel2abs $path, $docroot;
 	scalar read_file $path
@@ -83,6 +83,17 @@ Zeal::Docset - Class representing a Dash/Zeal docset
 =head1 SYNOPSIS
 
   use Zeal::Docset;
+  my $ds = Zeal::Docset->new('/home/mgv/docsets/Perl.docset');
+  say $ds->$path;  # /home/mgv/docsets/Perl.docset
+  say $ds->name;   # Perl
+  say $ds->id;     # perl
+  say $ds->family; # perl
+
+  # In SQL LIKE, % is .* and _ is .
+  my @matches = $ds->query('perlopen%'); # finds perlopenbsd and perlopentut
+  my $doc = $ds->query('perlsec'); # A Zeal::Document object for perlsec
+  my $html = $ds->get('perls_c'); # HTML documentation of perlsec
+  my @docs = $ds->list; # all documents
 
 =head1 DESCRIPTION
 

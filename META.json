@@ -4,7 +4,7 @@
       "Marius Gavrilescu <marius@ieval.ro>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "ExtUtils::MakeMaker version 6.98, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "ExtUtils::MakeMaker version 7.04, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -32,10 +32,14 @@
       },
       "runtime" : {
          "requires" : {
+            "Archive::Tar" : "0",
+            "Class::Accessor::Fast" : "0",
             "DBD::SQLite" : "0",
             "DBI" : "0",
             "File::Slurp" : "0",
+            "File::Which" : "0",
             "Mac::PropertyList::SAX" : "0",
+            "XML::Rules" : "0",
             "perl" : "5.014000"
          }
       }
@@ -46,5 +50,5 @@
          "url" : "http://git.ieval.ro/?p=zeal.git"
       }
    },
-   "version" : "0.000_001"
+   "version" : "0.000_002"
 }

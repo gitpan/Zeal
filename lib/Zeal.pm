@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use re '/s';
 
-our $VERSION = '0.000_001';
+our $VERSION = '0.000_002';
 
 use File::Spec::Functions qw/catfile/;
 
@@ -64,16 +64,12 @@ Zeal - Read and query Dash/Zeal docsets
 
   use Zeal;
   my $zeal = Zeal->new("/home/mgv/docsets/:/home/mgv/something.docset");
-  # Add another docset
-  $zeal->add('/home/mgv/somethingelse.docset');
-  # Add a directory containing docsets
-  $zeal->add('/home/mgv/moredocsets/');
-  # Documentation for 'length' in all docsets
-  my $doc = $zeal->query('length');
-  # Documentation for all Test:: perl modules
-  my @docs = $zeal->query('Test::%', 'perl');
-  # Alternative syntax
-  @docs = $zeal->query('perl:Test::%);
+  $zeal->add('/home/mgv/somethingelse.docset'); # Add another docset
+  $zeal->add('/home/mgv/moredocsets/');         # Add a directory containing docsets
+
+  my $doc = $zeal->query('length');             # Documentation for 'length' in all docsets
+  my @docs = $zeal->query('Test::%', 'perl');   # Documentation for all Test:: perl modules
+  @docs = $zeal->query('perl:Test::%);          # Alternative syntax
 
 =head1 DESCRIPTION
 
@@ -92,7 +88,7 @@ Available methods:
 Create a new Zeal object. I<$path> is an optional colon delimited
 string for initializing the object. Each of its components is
 recursively scanned for docsets (and can also be a docset itself). If
-<$path> is not provided, the value of I<$ENV{ZEAL_PATH>> (if defined)
+I<$path> is not provided, the value of I<$ENV{ZEAL_PATH}> (if defined)
 is used instead.
 
 =item $zeal->B<add>(I<$path>)

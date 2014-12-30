@@ -4,7 +4,7 @@ use 5.014000;
 use strict;
 use warnings;
 
-our $VERSION = '0.000_001';
+our $VERSION = '0.000_002';
 
 use parent qw/Class::Accessor::Fast/;
 __PACKAGE__->mk_accessors(qw/id name type path docset/);
@@ -26,6 +26,11 @@ Zeal::Document - Class representing a Dash/Zeal document
 =head1 SYNOPSIS
 
   use Zeal::Document;
+  my $doc = $ds->query('perlsec'); # $ds is a Zeal::Docset instance
+  say $doc->name; # perlsec
+  say $doc->type; # Module
+  say $doc->path; # perldoc-html/perlsec.html
+  my $html = $doc->fetch; # $html is now the HTML documentation for perlsec
 
 =head1 DESCRIPTION
 
